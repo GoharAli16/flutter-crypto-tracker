@@ -1,0 +1,131 @@
+name: crypto_tracker
+description: Advanced cryptocurrency portfolio tracker with real-time prices, trading features, and DeFi integration.
+
+publish_to: 'none'
+
+version: 2.7.0+35
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # State Management
+  provider: ^6.1.1
+  riverpod: ^2.4.9
+  flutter_riverpod: ^2.4.9
+  bloc: ^8.1.2
+  flutter_bloc: ^8.1.3
+  
+  # UI Components
+  cupertino_icons: ^1.0.6
+  google_fonts: ^6.1.0
+  flutter_svg: ^2.0.9
+  lottie: ^2.7.0
+  shimmer: ^3.0.0
+  flutter_staggered_animations: ^1.1.1
+  cached_network_image: ^3.3.0
+  flutter_animate: ^4.2.0+1
+  
+  # Navigation
+  go_router: ^12.1.3
+  auto_route: ^7.8.4
+  
+  # Data & Storage
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  shared_preferences: ^2.2.2
+  sqflite: ^2.3.0
+  isar: ^3.1.0+1
+  isar_flutter_libs: ^3.1.0+1
+  
+  # HTTP & API
+  http: ^1.1.2
+  dio: ^5.4.0
+  retrofit: ^4.0.3
+  json_annotation: ^4.8.1
+  web_socket_channel: ^2.4.0
+  
+  # Authentication
+  firebase_auth: ^4.15.3
+  firebase_core: ^2.24.2
+  firebase_firestore: ^4.13.6
+  google_sign_in: ^6.2.1
+  
+  # Real-time Features
+  socket_io_client: ^2.0.3+1
+  firebase_messaging: ^14.7.10
+  flutter_local_notifications: ^16.3.2
+  awesome_notifications: ^0.8.2
+  
+  # Utils
+  intl: ^0.19.0
+  uuid: ^4.2.1
+  path_provider: ^2.1.2
+  permission_handler: ^11.1.0
+  url_launcher: ^6.2.2
+  share_plus: ^7.2.1
+  package_info_plus: ^4.2.0
+  
+  # Charts & Visualization
+  fl_chart: ^0.66.0
+  syncfusion_flutter_charts: ^23.2.7
+  syncfusion_flutter_gauges: ^23.2.7
+  
+  # Crypto APIs
+  crypto_api: ^1.0.0
+  coinmarketcap_api: ^1.0.0
+  binance_api: ^1.0.0
+  
+  # Blockchain Integration
+  web3dart: ^2.7.3
+  walletconnect_dart: ^1.0.0
+  ethereum: ^0.0.1
+  
+  # QR Code & Barcode
+  qr_flutter: ^4.1.0
+  mobile_scanner: ^3.5.6
+  
+  # AI & ML
+  tflite_flutter: ^0.10.4
+  mlkit: ^0.15.0
+  
+  # Security
+  encrypt: ^5.0.1
+  crypto: ^3.0.3
+  local_auth: ^2.1.6
+  
+  # Testing
+  mockito: ^5.4.4
+  build_runner: ^2.4.7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  json_serializable: ^6.7.1
+  isar_generator: ^3.1.0+1
+  auto_route_generator: ^7.3.2
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/animations/
+    - assets/icons/
+    - assets/crypto_icons/
+    - assets/charts/
+  
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-Regular.ttf
+        - asset: assets/fonts/Inter-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Inter-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Inter-Bold.ttf
+          weight: 700
