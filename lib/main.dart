@@ -17,23 +17,19 @@ import 'features/trading/presentation/providers/trading_provider.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  
+
   // Initialize Firebase
   await Firebase.initializeApp();
-  
+
   // Initialize Hive
   await Hive.initFlutter();
-  
+
   // Initialize services
   await NotificationService.initialize();
   await CryptoService.initialize();
   await PortfolioService.initialize();
-  
-  runApp(
-    const ProviderScope(
-      child: CryptoTrackerApp(),
-    ),
-  );
+
+  runApp(const ProviderScope(child: CryptoTrackerApp()));
 }
 
 class CryptoTrackerApp extends ConsumerWidget {
@@ -43,7 +39,7 @@ class CryptoTrackerApp extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final router = ref.watch(routerProvider);
     final themeMode = ref.watch(themeModeProvider);
-    
+
     return MaterialApp.router(
       title: AppConfig.appName,
       debugShowCheckedModeBanner: false,
